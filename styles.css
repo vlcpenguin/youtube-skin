@@ -5,7 +5,8 @@
 button,
 ytd-menu-service-item-renderer > tp-yt-paper-item,
 #description,
-.ytChipShapeButtonReset > div::before {
+.ytChipShapeButtonReset > div::before,
+.ytChipShapeButtonReset > div {
     transition: background-color .25s;
 }
 
@@ -105,7 +106,7 @@ button#author-thumbnail-button.style-scope.ytd-comment-view-model > yt-img-shado
     height: 100%;
 }
 .ytChipShapeButtonReset > div:hover::before {
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(204, 0, 0, 0.3);
 }
 
 
