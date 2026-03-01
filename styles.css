@@ -1,0 +1,80 @@
+* {
+    border-radius: 0 !important;
+}
+
+div.yt-spec-avatar-shape--live-ring::before,
+div.yt-spec-avatar-shape--live-ring::after {
+    display: none !important;
+}
+
+div.yt-spec-avatar-shape--live-ring {
+    box-shadow: none !important;
+}
+
+tp-yt-paper-listbox {
+    padding: 0;
+}
+
+ytd-rich-item-renderer {
+    margin: 5px;
+}
+
+
+yt-touch-feedback-shape {
+    display: none !important;
+}
+ytd-logo > yt-icon > span.yt-icon-shape.style-scope.yt-icon.ytSpecIconShapeHost > div {
+    position: relative;
+}
+ytd-logo > yt-icon > span.yt-icon-shape.style-scope.yt-icon.ytSpecIconShapeHost > div > svg {
+    opacity: 0;
+}
+ytd-logo > yt-icon > span.yt-icon-shape.style-scope.yt-icon.ytSpecIconShapeHost > div::before {
+        content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://files.catbox.moe/w7ui5u.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  transform: scale(1.8) scaleX(0.7);
+    transform-origin: center;
+}
+
+ytd-rich-item-renderer.style-scope.ytd-rich-grid-renderer, yt-lockup-view-model.ytd-item-section-renderer.lockup.yt-lockup-view-model--wrapper {
+    transition: background-color 0.25s ease;
+}
+ytd-rich-item-renderer.style-scope.ytd-rich-grid-renderer:hover, yt-lockup-view-model.ytd-item-section-renderer.lockup.yt-lockup-view-model--wrapper:hover {
+    background-color: rgba(255,255,255,0.05);
+}
+
+button.yt-spec-button-shape-next.yt-spec-button-shape-next--filled.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--enable-backdrop-filter-experiment {
+    background-color: #cc0000 !important;
+    color: #f1f1f1 !important;
+}
+
+.ytwTimedAnimationButtonRendererHost > yt-smartimation:nth-child(1) > div:nth-child(1) > ytd-button-renderer:nth-child(1) > yt-button-shape:nth-child(1) > button:nth-child(1) {
+    background-color: #3ea6ff !important;
+          color: #f1f1f1 !important;
+
+}
+
+.yt-lockup-metadata-view-model__menu-button {
+    top: 0;
+    right: 0;
+    width: 0px;
+}
+button#author-thumbnail-button.style-scope.ytd-comment-view-model > yt-img-shadow {
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 0 0 rgba(255,0,0,0);
+}
+
+button#author-thumbnail-button.style-scope.ytd-comment-view-model > yt-img-shadow:hover {
+    box-shadow: 0 0 0 5px rgba(255,0,0,0.25);
+}
+button#author-thumbnail-button.style-scope.ytd-comment-view-model > yt-img-shadow > img {
+    transition: transform 0.25s ease;
+}
+button#author-thumbnail-button.style-scope.ytd-comment-view-model > yt-img-shadow > img:hover {
+    transform: scale(1.1);
+}
