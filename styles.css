@@ -2,9 +2,11 @@
     border-radius: 0 !important;
 }
 
-button, ytd-menu-service-item-renderer > tp-yt-paper-item {
+button,
+ytd-menu-service-item-renderer > tp-yt-paper-item,
+#description,
+.ytChipShapeButtonReset > div::before {
     transition: background-color .25s;
-    
 }
 
 div.yt-spec-avatar-shape--live-ring::before,
@@ -35,22 +37,24 @@ ytd-logo > yt-icon > span.yt-icon-shape.style-scope.yt-icon.ytSpecIconShapeHost 
     opacity: 0;
 }
 ytd-logo > yt-icon > span.yt-icon-shape.style-scope.yt-icon.ytSpecIconShapeHost > div::before {
-        content: "";
+    content: "";
     position: absolute;
     inset: 0;
     background-image: url("https://github.com/vlcpenguin/youtube-skin/blob/main/olddarkyoutube.png?raw=true");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-  transform: scale(1.8) scaleX(0.7);
+    transform: scale(1.8) scaleX(0.7);
     transform-origin: center;
 }
 
-ytd-rich-item-renderer.style-scope.ytd-rich-grid-renderer, yt-lockup-view-model.ytd-item-section-renderer.lockup.yt-lockup-view-model--wrapper {
+ytd-rich-item-renderer.style-scope.ytd-rich-grid-renderer,
+yt-lockup-view-model.ytd-item-section-renderer.lockup.yt-lockup-view-model--wrapper {
     transition: background-color 0.25s ease;
 }
-ytd-rich-item-renderer.style-scope.ytd-rich-grid-renderer:hover, yt-lockup-view-model.ytd-item-section-renderer.lockup.yt-lockup-view-model--wrapper:hover {
-    background-color: rgba(255,255,255,0.05);
+ytd-rich-item-renderer.style-scope.ytd-rich-grid-renderer:hover,
+yt-lockup-view-model.ytd-item-section-renderer.lockup.yt-lockup-view-model--wrapper:hover {
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 button.yt-spec-button-shape-next.yt-spec-button-shape-next--filled.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--enable-backdrop-filter-experiment {
@@ -64,13 +68,11 @@ button.yt-spec-button-shape-next.yt-spec-button-shape-next--filled.yt-spec-butto
 
 .ytwTimedAnimationButtonRendererHost > yt-smartimation:nth-child(1) > div:nth-child(1) > ytd-button-renderer:nth-child(1) > yt-button-shape:nth-child(1) > button:nth-child(1) {
     background-color: #3ea6ff !important;
-          color: #f1f1f1 !important;
-
+    color: #f1f1f1 !important;
 }
 
 .ytwTimedAnimationButtonRendererHost > yt-smartimation:nth-child(1) > div:nth-child(1) > ytd-button-renderer:nth-child(1) > yt-button-shape:nth-child(1) > button:nth-child(1):hover {
     background-color: rgba(62, 166, 255, 0.8) !important;
-
 }
 .yt-lockup-metadata-view-model__menu-button {
     top: 0;
@@ -79,15 +81,35 @@ button.yt-spec-button-shape-next.yt-spec-button-shape-next--filled.yt-spec-butto
 }
 button#author-thumbnail-button.style-scope.ytd-comment-view-model > yt-img-shadow {
     transition: box-shadow 0.3s ease;
-    box-shadow: 0 0 0 0 rgba(255,0,0,0);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
 }
 
 button#author-thumbnail-button.style-scope.ytd-comment-view-model > yt-img-shadow:hover {
-    box-shadow: 0 0 0 3.5px rgba(255,0,0,0.25);
+    box-shadow: 0 0 0 3.5px rgba(255, 0, 0, 0.25);
 }
 button#author-thumbnail-button.style-scope.ytd-comment-view-model > yt-img-shadow > img {
     transition: transform 0.25s ease;
 }
 button#author-thumbnail-button.style-scope.ytd-comment-view-model > yt-img-shadow > img:hover {
     transform: scale(1.1);
+}
+
+.ytChipShapeButtonReset > div::before {
+    position: absolute;
+    content: "";
+    background-color: transparent;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.ytChipShapeButtonReset > div:hover::before {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+
+.ytChipShapeButtonReset[aria-selected=true] > div {
+    background-color: #cc0000 !important;
+    color: #f1f1f1 !important;
 }
