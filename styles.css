@@ -42,10 +42,9 @@ ytd-logo > yt-icon > span.yt-icon-shape.style-scope.yt-icon.ytSpecIconShapeHost 
     position: absolute;
     inset: 0;
     background-image: url("https://github.com/vlcpenguin/youtube-skin/blob/main/olddarkyoutube.png?raw=true");
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    transform: scale(1.8) scaleX(0.7);
     transform-origin: center;
 }
 
